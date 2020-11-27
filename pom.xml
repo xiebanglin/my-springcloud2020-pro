@@ -29,6 +29,13 @@
         <mybatis-spring-boot-starter.version>2.1.1</mybatis-spring-boot-starter.version>
         <hutool-all.version>5.1.0</hutool-all.version>
     </properties>
+
+    <distributionManagement>
+        <site>
+            <id>website</id>
+            <url>scp://webhost.company.com/www/website</url>
+        </site>
+    </distributionManagement>
     <!--子模块继承之后，提供作用:锁定版本+子modlue不用写groupId和version-->
     <dependencyManagement>
         <dependencies>
@@ -40,7 +47,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!--spring cloud Hoxton. SR1-->
+            <!--spring cloud Hoxton.SR1-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -48,15 +55,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!--spring cloud alibaba 2.1.0.RELEASE-->
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Hoxton.SR1</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <!--spring cloud alibabg 2.1.0.RELEASE-->
+            <!--Spring cloud alibaba 2.1.0.RELEASE-->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
@@ -91,4 +90,19 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <!--第三方maven私服-->
+    <repositories>
+        <repository>
+            <id>nexus-aliyun</id>
+            <name>Nexus aliyun</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>
