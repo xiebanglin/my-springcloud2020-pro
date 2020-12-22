@@ -1,0 +1,27 @@
+package com.atguigu.springcloud.springcloud.feignservice.impl;
+
+import com.atguigu.springcloud.springcloud.dao.PaymentDao;
+import com.atguigu.springcloud.springcloud.entities.Payment;
+import com.atguigu.springcloud.springcloud.feignservice.PaymentService;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import javax.annotation.Resource;
+
+@Service
+@Transactional
+public class PaymentServiceImpl implements PaymentService {
+
+    @Resource
+    private PaymentDao paymentDao;
+
+    @Override
+    public int creat(Payment payment) {
+        return paymentDao.create(payment);
+    }
+
+    @Override
+    public Payment getPaymentById(Long id) {
+        return paymentDao.getPaymentById(id);
+    }
+}
