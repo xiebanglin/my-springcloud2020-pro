@@ -9,20 +9,21 @@ import org.springframework.context.annotation.Configuration;
 public class GatewayConfig {
 
     @Bean
-    public RouteLocator customerRouteLocator(RouteLocatorBuilder builder){
+    public RouteLocator customerRouteLocator(RouteLocatorBuilder builder) {
 
         RouteLocatorBuilder.Builder routes = builder.routes();
         routes.route("path_route_xie",
-                r->r.path("/guonei").uri("http://news.baidu.com/guonei"))
+                r -> r.path("/guonei").uri("http://news.baidu.com/guonei"))
                 .build();
         return routes.build();
     }
+
     @Bean
-    public RouteLocator customerRouteLocator1(RouteLocatorBuilder builder){
+    public RouteLocator customerRouteLocator1(RouteLocatorBuilder builder) {
 
         RouteLocatorBuilder.Builder routes = builder.routes();
         routes.route("path_route_xie1",
-                r->r.path("/guoji").uri("http://news.baidu.com/guoji"))
+                r -> r.path("/guoji").uri("http://news.baidu.com/guoji"))
                 .build();
         return routes.build();
     }

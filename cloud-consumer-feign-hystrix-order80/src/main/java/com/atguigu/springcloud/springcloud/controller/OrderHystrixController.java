@@ -25,7 +25,7 @@ public class OrderHystrixController {
     }
 
 
-//    @HystrixCommand(fallbackMethod = "paymentTimeOutFallbackMethod", commandProperties = {
+    //    @HystrixCommand(fallbackMethod = "paymentTimeOutFallbackMethod", commandProperties = {
 //            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")  //3秒钟以内就是正常的业务逻辑
 //    })
     @HystrixCommand

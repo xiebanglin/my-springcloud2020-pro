@@ -47,7 +47,7 @@ public class OrderController {
     public CommonResult<Payment> getPayment2(@PathVariable("id") Long id) {
         ResponseEntity<CommonResult> entity = restTemplate.getForEntity(PAYMENT_URL + "/payment/get/" + id, CommonResult.class);
         if (entity.getStatusCode().is2xxSuccessful()) {
-            log.info(entity.getStatusCode().toString() + "\t"  + entity.getHeaders());
+            log.info(entity.getStatusCode().toString() + "\t" + entity.getHeaders());
             return entity.getBody();
         } else {
             return new CommonResult<>(444, "操作失败");
@@ -55,10 +55,10 @@ public class OrderController {
     }
 
     @GetMapping(value = "/consumer/payment/lb")
-    public String getPaymentLB(){
+    public String getPaymentLB() {
 
         List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-PAYMENT-SERVICE");
-        if(instances == null || instances.size() <= 0){
+        if (instances == null || instances.size() <= 0) {
             return null;
         }
         ServiceInstance serviceInstance = loadBalancer.instances(instances);
