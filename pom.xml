@@ -29,6 +29,9 @@
         <module>cloud-stream-rabbitmq-provider8801</module>
         <module>cloud-stream-rabbitmq-consumer8802</module>
         <module>cloud-stream-rabbitmq-consumer8803</module>
+        <module>cloudalibaba-provider-payment9001</module>
+        <module>cloudalibaba-provider-payment9002</module>
+        <module>cloudalibaba-consumer-nacos-order83</module>
     </modules>
     <packaging>pom</packaging>
     <!--统一jar包和版本号管理-->
@@ -75,7 +78,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!--Spring cloud alibaba 2.1.0.RELEASE-->
+            <!--Spring cloud alibaba 2.1.0.RELEASE-->=89
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
