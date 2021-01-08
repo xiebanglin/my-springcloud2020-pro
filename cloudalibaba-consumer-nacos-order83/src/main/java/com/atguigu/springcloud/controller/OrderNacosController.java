@@ -9,6 +9,9 @@ import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
 
+/**
+ * @author Administrator
+ */
 @RestController
 @Slf4j
 public class OrderNacosController {

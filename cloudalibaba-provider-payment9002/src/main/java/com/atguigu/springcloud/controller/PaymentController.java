@@ -5,6 +5,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * @ProjectName: cloud2020
+ * @Package: com.atguigu.springcloud
+ * @ClassName: PaymentController
+ * @Author: xiebanglin
+ * @Description:
+ * @Date: 2021/1/8 12:33
+ * @Version: 1.0
+ */
 @RestController
 public class PaymentController {
 
@@ -12,9 +21,8 @@ public class PaymentController {
     private String serverPort;
 
     @GetMapping(value = "/payment/nacos/{id}")
-    public String getPayment(@PathVariable("id") Integer id)
-    {
-        return "nacos registry, serverPort: "+ serverPort+"\t id"+id;
+    public String getPayment(@PathVariable("id") Integer id) {
+        return "nacos registry, serverPort: " + serverPort + "\t id" + id;
     }
 
 }
