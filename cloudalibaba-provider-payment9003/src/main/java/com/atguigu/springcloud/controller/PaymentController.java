@@ -37,6 +37,4 @@ public class PaymentController {
         CommonResult<Payment> result = new CommonResult(200, "from mysql,serverPort:  " + serverPort, payment);
         return result;
     }
-
-
 }
