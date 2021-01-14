@@ -23,7 +23,6 @@ eureka:
     service-url:
       defaultZone: http://localhost:7001/eureka
 
-
 ##rabbitmq相关配置,暴露bus刷新配置的端点
 management:
   endpoints:
