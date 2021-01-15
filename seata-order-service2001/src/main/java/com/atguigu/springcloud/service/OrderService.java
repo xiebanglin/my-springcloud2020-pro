@@ -1,6 +1,7 @@
 package com.atguigu.springcloud.service;
 
-import com.atguigu.springcloud.entities.Order;
+
+import com.atguigu.springcloud.domain.Order;
 
 /**
  * @ProjectName: cloud2020

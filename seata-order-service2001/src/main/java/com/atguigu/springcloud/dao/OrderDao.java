@@ -1,6 +1,6 @@
 package com.atguigu.springcloud.dao;
 
-import com.atguigu.springcloud.entities.Order;
+import com.atguigu.springcloud.domain.Order;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

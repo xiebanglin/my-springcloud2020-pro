@@ -10,8 +10,8 @@ package com.atguigu.springcloud.controller;
  * @Version: 1.0
  */
 
-import com.atguigu.springcloud.entities.CommonResult;
-import com.atguigu.springcloud.entities.Order;
+import com.atguigu.springcloud.domain.CommonResult;
+import com.atguigu.springcloud.domain.Order;
 import com.atguigu.springcloud.service.OrderService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

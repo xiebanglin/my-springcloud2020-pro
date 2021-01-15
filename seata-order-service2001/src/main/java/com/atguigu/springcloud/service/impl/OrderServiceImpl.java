@@ -1,7 +1,8 @@
 package com.atguigu.springcloud.service.impl;
 
+
 import com.atguigu.springcloud.dao.OrderDao;
-import com.atguigu.springcloud.entities.Order;
+import com.atguigu.springcloud.domain.Order;
 import com.atguigu.springcloud.feign.AccountService;
 import com.atguigu.springcloud.feign.StorageService;
 import com.atguigu.springcloud.service.OrderService;

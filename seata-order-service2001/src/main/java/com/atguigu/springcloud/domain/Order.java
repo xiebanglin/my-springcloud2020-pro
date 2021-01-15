@@ -1,4 +1,4 @@
-package com.atguigu.springcloud.entities;
+package com.atguigu.springcloud.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -30,5 +30,6 @@ public class Order {
     private BigDecimal money;
 
     private Integer status; //订单状态：0：创建中；1：已完结
+
 }
 
