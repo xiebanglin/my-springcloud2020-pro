@@ -1,0 +1,331 @@
+{
+	"info": {
+		"_postman_id": "e442e159-0e9c-4018-8494-0494e43a77f3",
+		"name": "cloud2020",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/payment/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"serial\":\"20000\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8002/payment/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8002",
+					"path": [
+						"payment",
+						"create"
+					],
+					"query": [
+						{
+							"key": "serial",
+							"value": "00002",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/payment/get/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8001/payment/get/1"
+			},
+			"response": []
+		},
+		{
+			"name": "consumer/payment/get/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1/consumer/payment/get/9"
+			},
+			"response": []
+		},
+		{
+			"name": "consumer/payment/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1/consumer/payment/create?serial=0007",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"consumer",
+						"payment",
+						"create"
+					],
+					"query": [
+						{
+							"key": "serial",
+							"value": "0007"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8001/payment/discovery",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8001/payment/discovery"
+			},
+			"response": []
+		},
+		{
+			"name": "8004/payment/zk",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8004/payment/zk"
+			},
+			"response": []
+		},
+		{
+			"name": "consumer/payment/zk",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost/consumer/payment/zk"
+			},
+			"response": []
+		},
+		{
+			"name": "payment/consul",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8006/payment/consul"
+			},
+			"response": []
+		},
+		{
+			"name": "consumer/payment/consul",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost/consumer/payment/consul"
+			},
+			"response": []
+		},
+		{
+			"name": "consumer/payment/getForEntity/9",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1/consumer/payment/getForEntity/9"
+			},
+			"response": []
+		},
+		{
+			"name": "/payment/lb",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8002/payment/lb"
+			},
+			"response": []
+		},
+		{
+			"name": "80/consumer/payment/lb",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1/consumer/payment/lb"
+			},
+			"response": []
+		},
+		{
+			"name": "feign-consumer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1/consumer/payment/get/1"
+			},
+			"response": []
+		},
+		{
+			"name": "consumer/payment/feign/timeout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1/consumer/payment/feign/timeout"
+			},
+			"response": []
+		},
+		{
+			"name": "8001/payment/feign/timeout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8001/payment/feign/timeout"
+			},
+			"response": []
+		},
+		{
+			"name": "8001/payment/hystrix/ok/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8001/payment/hystrix/ok/1"
+			},
+			"response": []
+		},
+		{
+			"name": "8001/payment/hystrix/timeout/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8001/payment/hystrix/timeout/1"
+			},
+			"response": []
+		},
+		{
+			"name": "80/consumer/payment/hystrix/ok/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1/consumer/payment/hystrix/ok/1"
+			},
+			"response": []
+		},
+		{
+			"name": "80/consumer/payment/hystrix/timeout/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1/consumer/payment/hystrix/timeout/1"
+			},
+			"response": []
+		},
+		{
+			"name": "8001/payment/circuit/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8001/payment/circuit/1"
+			},
+			"response": []
+		},
+		{
+			"name": "9527/payment/get/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:9527/payment/get/1"
+			},
+			"response": []
+		},
+		{
+			"name": "9527/payment/lb",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:9527/payment/lb"
+			},
+			"response": []
+		},
+		{
+			"name": "3355/configInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:3355/configInfo"
+			},
+			"response": []
+		},
+		{
+			"name": "3355/actuator/refresh",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:3355/actuator/refresh"
+			},
+			"response": []
+		},
+		{
+			"name": "3344/actuator/bus-refresh",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:3344/actuator/bus-refresh/config-client:3355"
+			},
+			"response": []
+		},
+		{
+			"name": "consumer/payment/zipkin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1/consumer/payment/zipkin"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2001/order/create?userId=1&productId=1&count=10&money=100",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2001/order/create?userId=1&productId=1&count=10&money=100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2001",
+					"path": [
+						"order",
+						"create"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "1"
+						},
+						{
+							"key": "productId",
+							"value": "1"
+						},
+						{
+							"key": "count",
+							"value": "10"
+						},
+						{
+							"key": "money",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
