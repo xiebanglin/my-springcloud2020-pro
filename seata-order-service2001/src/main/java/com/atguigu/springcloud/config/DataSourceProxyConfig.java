@@ -18,7 +18,7 @@ import javax.sql.DataSource;
  * @Package: com.atguigu.springcloud.config
  * @ClassName: DataSourceProxyConfig
  * @Author: xiebanglin
- * @Description:
+ * @Description: 使用seata对数据源进行代理
  * @Date: 2021/1/15 15:39
  * @Version: 1.0
  */
